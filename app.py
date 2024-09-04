@@ -1,3 +1,8 @@
+!pip install librosa
+!pip install numpy
+!pip install joblib
+!pip install streamlit
+
 import streamlit as st
 import librosa
 import numpy as np

@@ -13,7 +13,7 @@ def extract_features(file_path):
     return np.mean(mfccs.T, axis=0)
 
 st.title("Human vs Dog Voice Classification")
-audio_file = st.file_uploader("Upload an audio file", type=["wav"])
+audio_file = st.file_uploader("Upload an audio file[.wav format only]", type=["wav"])
 
 if audio_file is not None:
     # Save the uploaded file to a temporary directory

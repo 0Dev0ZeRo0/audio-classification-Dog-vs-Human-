@@ -12,7 +12,7 @@ def extract_features(file_path):
     mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
     return np.mean(mfccs.T, axis=0)
 
-st.title("Human vs Animal Voice Classification")
+st.title("Human vs Dog Voice Classification")
 audio_file = st.file_uploader("Upload an audio file", type=["wav"])
 
 if audio_file is not None:
